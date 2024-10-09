@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>BlogginX | Blogs-Plant Life</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            .headbar
+            {   overflow: hidden;
+                height:10vh;
+                width:89vw;
+                position:fixed; 
+                top:0;  
+                font-size: 4em;
+                margin-left: 6vw;
+                margin-right:3vw; ;
+                text-shadow:2px 2px 3px black;
+                background-color: rgb(206, 213, 166); 
+                padding-top:20px;
+            }
+            body
+            {
+                background-color: rgb(206, 213, 166);
+            }
+            .img
+            {   margin-top: 15vh;
+                float:left;
+                height:85vh;
+                width:60vh;
+                background-image:url('https://scontent.fdel1-2.fna.fbcdn.net/v/t1.6435-9/86215909_105970914315030_8975489871971876864_n.jpg?stp=cp0_dst-jpg_e15_q65_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=8024bb&_nc_ohc=0yIEuWh5mrcAX867ugg&_nc_ht=scontent.fdel1-2.fna&oh=00_AfB3j8YB04fxxxPfjq2OWTjLrBd7oUSIzNluU2piLtM2bA&oe=64756BEA') ;
+                background-size:60vh 85vh ;
+                margin-left: 7vw;
+                box-shadow: 8px 8px 12px black;
+            }
+            .text
+            {   height:26vh;
+                width: 54vw;
+                padding-top: 20vh;
+                font-size: 5em;
+                float:left;
+                font-family: 'Times New Roman', Times, serif;
+                text-shadow: 5px 3px 10px black;
+                padding-left:10px;
+            }
+            .text2
+            {   float:left;
+                width:50vw;
+                font-size:1.45em;
+                color:rgb(41, 57, 32);
+                padding-left:30px;
+                font-family:cursive  ;
+            }
+            .social
+            {
+                position:fixed;
+                height:100vh;
+                display:flex;
+                flex-direction:column;
+                justify-content:center; 
+                transform:translate(-296px,0);
+            }
+            .social a
+            {
+                color:#fff;
+                background:rgba(90,135,65,0.3);
+                font-size:20px;
+                font-weight: 600;
+                text-decoration: none;
+                display:block;
+                margin:5px;
+                padding:20px;
+                width:300px;
+                text-align:right;
+                border-radius:50px;
+                transition:1s;
+                transition-property:transform;
+            }
+            .social a:hover{
+                transform:translate(140px,0);
+            }
+            .social i{
+                margin-left: 10px;
+                font-size: 30px;
+                width:30px;
+                height:30px;
+            }
+            .social a:nth-child(1) i{
+                color:#fff;
+            }
+            .social a:nth-child(2) i{
+                color:#fff;
+                
+            }
+            .social a:nth-child(3) i{
+                color:#fff;
+            }
+            .social a:nth-child(4) i{
+                color:#fff;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="headbar"><span style="color:green">Plant</span><span style="color:black">Life</span></div>
+        <div class="social">
+            <a class="facebook" target="blank">Facebook<i class="fab fa-facebook"></i></a>
+            <a class="telegram" target="blank">Telegram<i class="fab fa-telegram"></i></a>
+            <a class="twitter" target="blank">Twitter<i class="fab fa-twitter"></i></a>
+            <a class="whatsapp" target="blank">Whatsapp<i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="img"></div>
+        <div class="text"><span style="color:rgb(41, 57, 32)">----- This is</span><br><span style="color:rgb(90, 135, 65)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;our </span><span style="color:rgb(41, 57, 32)">time -----</span></div>
+        <div class="text2"><p>It may seem far-fetched that greenery can have such an advantageous effect on such a simple yet important thing such as our daily lives, but the <b>result & smiles</b> speak speak for themselves. Witness the joy a living tree like a huge Bamboo Palm brings to colleges walking into a reception area that it inhabits, or the peaceful sleep a Snake Plant, Peace Lily or Spider Plant in a bedroom can help faster. The <b>benefits</b> of indoor plants are of paramount importance for indoor environment quanlity.</p>
+        <p>The importance of a healthy working & living environment is so significant, even NASA conducted a study on <i>clean air</i> and how common indoor plants can help achieve this. The benefits of indoor plants & their ability to filter harmful toxins & pollutants from the air within our most occupied indoor spaces makes the air more breathable for us & ultimately assists in tranforming a room into a living space.</p></div>
+        <script>
+            const link=encodeURI(window.location.href);
+            const msg=encodeURIComponent('Hey , I found this article');
+            const title=encodeURIComponent(document.querySelector('title').textContent);
+            console.log([link,msg,title]);
+            const facebook =document.querySelector('.facebook');
+            facebook.href=`https://www.facebook.com/share.php?u=${link}`;
+            const twitter =document.querySelector('.twitter');
+            twitter.href=`https://twitter.com/share?&url=${link}&text=${msg}`;
+            const whatsapp =document.querySelector('.whatsapp');
+            whatsapp.href=`https://wa.me/?text=${msg} ${link}`;
+            const telegram =document.querySelector('.telegram');
+            telegram.href=`https://telegram.me/share/url?url=${link}`;
+        </script>
+    </body>
+</HTML>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var min=1
+            var sec=60
+            function timer()
+            {
+                if (sec==0)
+                {
+                    sec=60;
+                    min--;
+                }
+                sec--;
+                document.getElementById("t").innerHTML=min+":"+sec;
+                document.getElementById("t").style.color="red"
+                setTimeout(timer,1000);
+            }
+        </script>
+    </head>
+    <body onload="timer()">
+        <label id="t">Timer</label>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.navbar {
+			overflow: hidden;
+			width:100%;
+			background-color:white;
+			grid-column-start:1;
+			grid-column-end:5;
+		}
+		.navbar a {
+			float:left;
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.navbar a:hover {
+			background-color: #4b91f1;
+			color: white;
+		}
+		.container {
+			display:grid;
+			padding:50px;
+			gap:20px 20px;
+		}
+		.search {
+			float: right;
+			padding: 6px;
+			margin-top: 8px;
+			margin-right: 16px;
+			border: 1px solid;
+			font-size: 17px;
+		}
+		.city-image {
+			width:100%;
+		}
+		.border {
+			border:10px solid white;
+			background-color:white;
+			grid-column-start:1;
+			grid-column-end:5;
+		}
+		.d1 {
+			grid-column-start:1;
+			grid-column-end:1;
+		}
+		.d2 {
+			grid-column-start:2;
+			grid-column-end:2;
+		}
+		.d3 {
+			grid-column-start:3;
+			grid-column-end:3;
+		}
+		.d4 {
+			grid-column-start:4;
+			grid-column-end:4;
+		}
+		.image {
+			width:100%;
+		}
+	</style>
+	<body style="background-color:#ada6a0">
+		<center>
+			<img src="logo.jpg">
+		</center>
+		<div class="container">
+			<div class="navbar">
+				<a class="active" href="#home">Home</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#blog">Blog</a>
+				<a href="#content">Content</a>
+				<form>
+					<button type="submit" class="search" style="width:40px;"><i class="fa fa-search"></i></button>
+					<input type="text" class="search" style="margin-right:0px;" placeholder="Search..">
+				</form>
+			</div>
+			<div class="border">
+				<img src="city.jpg" class="city-image">
+			</div>
+			<div class="d1 border">
+				<img src="ny.jpg" class="image"><br>
+				New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers.
+			</div>
+			<div class="d2 border">
+				<img src="l.jpeg" class="image"><br>
+				London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations.
+			</div>
+			<div class="d3 border">
+				<img src="p.jpeg" class="image"><br>
+				Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine.
+			</div>
+			<div class="d4 border">
+				<img src="r.jpeg" class="image"><br>
+				Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale.
+			</div>
+			<div class="border">
+				<div style="display:grid;">
+					<div style="grid-column-start:1; grid-column-end:1;">
+						<img src="collage.png" width="95%">
+					</div>
+					<div style="grid-column-start:2; grid-column-end:4;">
+						<span style="font-size:30px; font-weight:bolder;">
+							Welcome to the site
+						</span><br>
+						New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale.
+					</div>
+				</div>
+			</div>
+			<div class="navbar">
+				<a href="#home" style="color:black;">Term of Services</a>	
+				<a href="#portfolio" style="color:black;">Privacy Policy</a>
+				<a href="#blog" style="color:black;"><span class="fa fa-copyright"></span>2008 Company</a>
+				<span style="float:right;">
+						<a href="#home" style="color:black;">Home</a>
+						<a href="#portfolio" style="color:black;">Portfolio</a>
+						<a href="#blog" style="color:black;">Blog</a>
+						<a href="#content" style="color:black;">Content</a>
+				</span>
+			</div>
+		</div>
+	</body>
+</html>

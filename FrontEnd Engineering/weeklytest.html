@@ -1,0 +1,175 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .headbar{
+                position:fixed ;
+                display: flex;
+                background-color: black;
+                height:50px;
+                width:100vw;
+                color:white;
+                font-size: 1.5em;
+                top:10px;
+                align-items: center;
+            }
+            .webn{
+                display: inline;
+                color:white;
+                font-size: 1.2em;
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+            .home{
+                display:inline;
+                color:white;
+                font-size: 0.90em;
+                margin-top: 12px;
+                margin-left: 13px;
+            }
+            .aboutus{
+                display:inline;
+                color:white;
+                font-size: 0.90em;
+                margin-top: 12px;
+                margin-left: 13px;
+            }
+            .services{
+                display:inline;
+                color:white;
+                font-size: 0.90em;
+                margin-top: 12px;
+                margin-left: 13px;
+            }
+            .img{
+                margin-top: 10%;
+                margin-left: 22%;
+                background-image: url('https://hblimg.mmtcdn.com/content/hubble/img/gwalior/mmt/destination/m_Destination_Gwalior_l_522_822.jpg');
+                background-size:822px 522px ;
+                height: 522px;
+                width: 822px;
+            }
+            .home:hover{
+                cursor: pointer;
+            }
+            .aboutus:hover{
+                cursor:pointer;
+            }
+            .services:hover{
+                cursor: pointer;
+            }
+            .left{
+                flex: 3;
+            }
+            .right{
+                flex:1;
+            }
+            .search
+            {
+                color:white;
+            
+            }
+            .login{
+                display:inline;
+                color:white;
+                font-size: 0.90em;
+                margin-left: 180px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="headbar">
+            <div class="left">
+            <div class="webn">Historical places</div>
+            <div class="home">Home</div>
+            <div class="aboutus">About us</div>
+            <div class="services">Services</div></div>
+            <div class="right">
+                <div class="search"><input type="search" placeholdeer="search"></div>
+                <div class="login">Login</div>
+            </div>
+        </div>
+        <div class="img"></div>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            nav{
+                background-color: #333;
+                display: flex;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                padding: 14px 16px;
+            }
+            ul{
+                list-style-type: none;
+                overflow: hidden
+            }
+            li{
+                margin: 14px 0px;
+                float: left;
+            }
+            a:hover{
+                background-color: #555;
+            }
+            .topleft{
+                flex: 1;
+            }
+            .dropdown{
+                width: 76px;
+                background-color: #bdbdbd;
+                display: none;
+                margin-left: 203px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hi").click(function(){
+                    $(".dropdown").toggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="topleft">
+                <ul>
+                    <li><a href="#">Web Site Name</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" id="hi">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+            <div class="topright">
+                <ul>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dropdown">
+            <ul>
+                <li><a href="#" id="hi">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+        <div style="margin: 100px; margin-bottom: 0px; position: fixed; top: 50px;">
+            <img src="hi.jpg" style="width: 100%;"> 
+        </div>
+    </body>
+</html>

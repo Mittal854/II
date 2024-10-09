@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Static Site</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function addSocialShareButtons() {
+      // Create the Facebook button
+      var facebookButton = '<a href="#" class="facebook-share-button">Share on Facebook</a>';
+      $('.social-share-buttons').append(facebookButton);
+      
+      // Create the Twitter button
+      var twitterButton = '<a href="#" class="twitter-share-button">Share on Twitter</a>';
+      $('.social-share-buttons').append(twitterButton);
+      
+      // Create the LinkedIn button
+      var linkedInButton = '<a href="#" class="linkedin-share-button">Share on LinkedIn</a>';
+      $('.social-share-buttons').append(linkedInButton);
+      
+      // Add click event listeners to each button
+      $('.facebook-share-button').click(function() {
+        window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(document.URL), 'facebook-share-dialog', 'width=626,height=436');
+        return false;
+      });
+      $('.twitter-share-button').click(function() {
+        window.open('https://twitter.com/share?url=' + encodeURIComponent(document.URL), 'twitter-share-dialog', 'width=626,height=436');
+        return false;
+      });
+      $('.linkedin-share-button').click(function() {
+        window.open('https://www.linkedin.com/shareArticle?url=' + encodeURIComponent(document.URL), 'linkedin-share-dialog', 'width=626,height=436');
+        return false;
+      });
+    }
+    
+    $(document).ready(function() {
+      addSocialShareButtons();
+    });
+  </script>
+</head>
+<body>
+  <div class="social-share-buttons"></div>
+  
+  <p>My static site content goes here.</p>
+</body>
+</html>

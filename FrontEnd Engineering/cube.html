@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<script>
+	function cube() {
+		var n = document.getElementById("num").value;
+		document.getElementById("cube").innerHTML = n*n*n;
+	}
+	</script>
+	<body>
+		<center>
+			<h3>Enter a Number:</h3>
+			<input type="number" id="num" value="0">
+			<button onclick="cube()">
+				Find
+			</button>
+			<h3>
+				Answer:
+			</h3>
+			<hr>
+			<p id="cube" style="padding:5px;">0</p>
+			<hr>
+		</center>
+	</body>
+</html>

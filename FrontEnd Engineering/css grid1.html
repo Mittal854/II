@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .di
+        {
+            display: grid;
+            grid-gap: 10px;
+            height: 500px;
+            width: 500px;
+            text-align: left;
+        }
+        .d1
+        {
+            background-color:yellow;
+            border: 2px solid red;
+        }
+        #d2{display: grid; grid-gap: 10px; grid-template-columns: repeat(4, 1fr);}
+        #d3{display: grid; grid-gap: 10px; grid-row-start: 2; grid-row-end: 4; grid-column-start: 4; height: 415px;}
+        #d4{display: grid; grid-gap: 10px; grid-column-start: 1; grid-column-end: 4; height: 300px;}
+        #d5h{display: grid; grid-gap: 10px; grid-column-start: 1; grid-column-end: 5; grid-row-start: 1; grid-row-end: 2; height: 30px;}
+        #d5f{display: grid; grid-gap: 10px; grid-column-start: 1; grid-column-end: 5; grid-row-start: 4; grid-row-end: 5; height: 30px;}
+        #ds{height: 100px;}
+    </style>
+</head>
+<body>
+    <center>
+        <div class="di" id="d2">
+            <div class="d1" id="d5h">Header</div>
+            <div class="d1" id="ds">Small box</div>
+            <div class="d1" id="ds">Small box</div>
+            <div class="d1" id="ds">Small box</div>
+            <div class="d1" id="d3">Sidebar</div>
+            <div class="d1" id="d4">Main content</div>
+            <div class="d1" id="d5f">Footer</div>        
+        </div>
+    </center>
+</body>
+</html>

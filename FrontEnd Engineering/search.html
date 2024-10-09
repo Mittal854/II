@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>search</title>
+    </head>
+    <body>
+        <input type="text" id="search_bar">
+        <ul li="list">
+            <li>Apple</li>
+            <li>ball</li>
+            <li>Cat</li>
+            <li>dog</li>
+            <li>Elephant</li>
+        </ul>
+        <script>
+            let search_bar=document.getElementById("search_bar");
+            let li_tags=document.getElementsByTagName("list");
+            search_bar.addEventListener("input",find_and_show);
+            function find_and_show(){
+                for(let i=0;i<li_tags.length;i++){
+                    let element=li_tags[i].textContent.toLowerCase();
+                    if(element.includes(search_bar.value.toLowerCase())){
+                        li_tags[i].style.display='';
+                    }
+                    else{
+                        li_tags[i].style.display='none';
+                    }
+                }
+            }
+            </script>
+
+    </body>
+</html>

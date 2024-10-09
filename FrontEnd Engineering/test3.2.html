@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>template</title>
+<style>
+.item1 { grid-area: header;height:15vh; }
+.item2 { grid-area: menu; height: 80vh;}
+.item3 { grid-area: main;height: 50vh; }
+.item4 { grid-area: right;height: 50vh; }
+.item5 { grid-area: footer;height: 15vh; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header header'
+    'menu main main main main right right'
+    'menu footer footer footer footer footer footer';
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1" style="background-color:lightgreen">Header</div>
+  <div class="item2" style="background-color: rgb(120, 174, 120);">Nav</div>
+  <div class="item3" style="background-color: white;">Article</div>  
+  <div class="item4" style="background-color: rgb(224, 202, 169);">Aside</div>
+  <div class="item5" style="background-color: lightgreen;">Footer</div>
+</div>
+
+</body>
+</html>
+
+

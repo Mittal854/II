@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form name="myform" method="post">
+            username<input type="text" name="uname" id="name"><br>
+            password<input type="password" name="pwd" id="pwd"><br>
+            confirm password<input type="password" name="cpwd" id="cpwd"><br>
+            email<input type="email" name="email" id="email"><br>
+            <input type="submit" value="submit">
+            
+
+        </form>
+        <script>
+            function validateform()
+            {
+
+            }
+        </script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>4a</title> 
+    </head>
+    <body>
+        <form name="myform" method="post" onsubmit="return validateform()">
+            username <input type="text" name="uname" id="name"><br>
+            password <input type="password" name="pwd" id="pwd"><br>
+            confirm password <input type="password" name="cpwd" id="cpwd" onblur="return matchpassword()"><br>
+            email <input type="email" name="email" id="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+
+        <script>
+            function validateform()
+            {
+                var x = document.forms["myform"] ["uname"].value;
+                var y = document.forms["myform"] ["pwd"].value;
+                if (x == "" || y == "")
+                {
+                    alert("required fields must be filled out");
+                    document.getElementById("name").style.borderColor="Red";
+                    document.getElementById("pwd").style.borderColor="Red";
+                    return false;
+                }
+            }
+            function matchpassword()
+            {
+                var password=document.getElementById("pwd").value;
+                var cpassword=document.getElementById("cpwd").value;
+                if (password!=cpassword)
+                {
+                    document.getElementById("Error").innerHTML="password should be same";
+                    document.getElementById("cpwd").style.borderColor="REd";
+                    document.getElementById("cpwd").value="";
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
